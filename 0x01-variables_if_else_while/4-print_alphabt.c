@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- *  printletters 
+ * main - printing letters of alphabet except q and e
  *
- * Return
+ * Return: Included alphabets or nothing
  */
+
 
 int main(void)
 {

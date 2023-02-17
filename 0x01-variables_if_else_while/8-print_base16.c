@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * displays  number of base 16
+ * main - displays all number of base 16
  *
- * Ret
+ * Return: Return a value of base 16 or nothing
  */
 
 int main(void)

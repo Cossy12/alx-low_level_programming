@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *print single to base 10
+ * main - print single digits to base 10
  *
- * Return
+ * Return: return single digit or nothing
  */
 
 int main(void)

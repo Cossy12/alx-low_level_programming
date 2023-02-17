@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * 
+ * main - assigning randon numbers to n
  *
- * Retrn
+ * Return: Randon num or nothing
  */
 
 int main(void)

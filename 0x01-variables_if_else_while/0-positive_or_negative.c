@@ -2,11 +2,13 @@
 #include <time.h>
 #include <stdlib.h>
 
+
 /**
- * 
+ * main - assigning randon numbers to n
  *
- *  Randon numner
+ * Return: Randon num or nothing
  */
+
 
 int main(void)
 {

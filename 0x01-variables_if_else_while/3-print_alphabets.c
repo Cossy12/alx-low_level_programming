@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * display aphabest 
+ * main - display aphabest in both lowercase and uppercase
  *
- * Return
+ * Return: return aplhabet characters or nothing
  */
 
 int main(void)
