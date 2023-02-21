@@ -1,15 +1,23 @@
-#include <unistd.h>
+
+#include <stdio.h>
 
 /**
- * _putchar - prints the char c to the standard display
- * @c: the characted that should be displayed
+ * main - a program that prints _putchar
  *
- * Retrun: 1 on success
- * When an error occurs return -1
+ * Return: 0
  */
 
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
+	return (0);
 }
 
