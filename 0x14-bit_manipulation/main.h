@@ -1,11 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stddef.h>
-unsigned int binary_converse_uint(const char *q);
-void print_out_binary(unsigned long int x);
-int pint_get_bit(unsigned long int x, unsigned int l);
-int set_alt_bit(unsigned long int *x, unsigned int l);
-int clear_all_bit(unsigned long int *x, unsigned int l);
-unsigned int flip_all_bits(unsigned long int x, unsigned long int q);
+unsigned int binary_to_uint(const char *b);
+void print_binary(unsigned long int n);
+int get_bit(unsigned long int n, unsigned int index);
+int set_bit(unsigned long int *n, unsigned int index);
+int clear_bit(unsigned long int *n, unsigned int index);
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+int _putchar(char c);
 #endif
+
 

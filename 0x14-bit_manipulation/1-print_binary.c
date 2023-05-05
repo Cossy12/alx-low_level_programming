@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * print- rep of unsigned int
+ * print_binary - prints the binary rep of unsigned int
  * @n: unsigned int
  *
- * Return: null
+ * Return: nothing
  */
 
-void print_out_binary(unsigned long int x);
+void print_binary(unsigned long int n)
 {
-	int j;
+	int i;
 
-	if (x > 1)
-		print_binary(x >> 1);
+	if (n > 1)
+		print_binary(n >> 1);
 
-	j = x & 1;
+	i = n & 1;
 
-	_putchar(j + '0');
+	_putchar(i + '0');
 }
 

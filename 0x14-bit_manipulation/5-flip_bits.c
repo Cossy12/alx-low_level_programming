@@ -2,23 +2,24 @@
 
 
 /**
- * flip_all_bits - returns
- * @n: value one.
- * @m: value two.
+ * flip_bits - returns the number of bits to get from
+ *	one number to another
+ * @n: number one.
+ * @m: number two.
  *
- * Return: value of bits.
+ * Return: number of bits.
  */
 
-unsigned int flip_all_bits(unsigned long int x, unsigned long int q);
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int index;
+	unsigned int nbits;
 
-	for (index = 0; x || q; x >>= 1, q >>= 1)
+	for (nbits = 0; n || m; n >>= 1, m >>= 1)
 	{
-		if ((x & 1) != (q & 1))
-			index++;
+		if ((n & 1) != (m & 1))
+			nbits++;
 	}
 
-	return (index);
+	return (nbits);
 }
 

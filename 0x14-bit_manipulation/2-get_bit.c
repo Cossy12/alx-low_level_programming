@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- * pint_get_bit - returns the value of a bit at a give l.
+ * get_bit - returns the value of a bit at a give index.
  * @n: unsigned long int input.
- * @index: l of the bit.
+ * @index: index of the bit.
  *
  * Return: value of the bit.
  */
 
-int pint_get_bit(unsigned long int x, unsigned int l);
+int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int i;
 
-	if (x == 0 && l < 64)
+	if (n == 0 && index < 64)
 		return (0);
 
 	for (i = 0; i <= 63; n >>= 1, i++)
 	{
-		if (l == i)
+		if (index == i)
 		{
-			return (x & 1);
+			return (n & 1);
 		}
 	}
 

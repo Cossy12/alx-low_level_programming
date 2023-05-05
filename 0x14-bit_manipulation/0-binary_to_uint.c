@@ -1,32 +1,32 @@
 #include "main.h"
 
 /**
- * binary_converse_uint
- * @b: pointer converse binary 
+ * binary_to_uint - converts binary to unsigned int
+ * @b: pointer to binary num
  *
- * Return: unsigned    int
+ * Return: unsigned int
  */
 
-unsigned int binary_converse_uint(const char *q);
+unsigned int binary_to_uint(const char *b)
 {
 	int i = 0, j = 0;
 
 	unsigned int num = 0;
 
-	if (q == NULL)
+	if (b == NULL)
 		return (0);
 
-	while (q[i] != '\0')
+	while (b[i] != '\0')
 	{
-		if ((q[i] != '0') && (q[i] != '1'))
+		if ((b[i] != '0') && (b[i] != '1'))
 			return (0);
 		i++;
 	}
 
-	while (q[j] == '0' || q[j] == '1')
+	while (b[j] == '0' || b[j] == '1')
 	{
 		num <<= 1;
-		num += q[j] - '0';
+		num += b[j] - '0';
 
 		j++;
 
